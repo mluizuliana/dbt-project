@@ -21,5 +21,3 @@ with prod as (
     inner join ordrs ord on (od.order_id = ord.order_id) 
 )
 select * from finaljoin
-limit 6000
-

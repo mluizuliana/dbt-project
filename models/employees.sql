@@ -1,3 +1,4 @@
+--model employees
 with calc_employees AS (
     select 
     date_part(year, current_date) - date_part(year, birth_date) age, /*Calcular idade*/

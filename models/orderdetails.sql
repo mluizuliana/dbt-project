@@ -4,4 +4,3 @@ od.unit_price * od.quantity total,
 (pr.unit_price * od.quantity) - total discount
 from  {{source('sources','order_details')}} od
 left join {{source('sources','products')}} pr on (od.product_id = pr.product_id)
-limit 300 /*Limite de linhas que o banco deve retornar*/
